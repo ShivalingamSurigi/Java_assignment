@@ -115,8 +115,7 @@ public class BankingManagementSystem {
         do{
             IO.println("\n======================");
             IO.println("BANK MANAGEMENT SYSTEM");
-            IO.println("======================4" +
-                    "");
+            IO.println("========================");
             IO.println("1 Create Account");
             IO.println("2 Deposit");
             IO.println("3 Withdraw");
