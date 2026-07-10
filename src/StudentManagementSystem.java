@@ -34,6 +34,7 @@ public class StudentManagementSystem {
     }
     public void displayStudent()
     {
+        if(!checkMarksExists())return;
         IO.println("\n-----Student Details-----");
         IO.println("Student Name:"+StudentName);
         IO.println("RollNumber:"+RollNumber);
