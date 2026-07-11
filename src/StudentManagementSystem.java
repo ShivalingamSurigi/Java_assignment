@@ -11,6 +11,8 @@ public class StudentManagementSystem {
     int dbms;
     int subjects;
     double Average;
+    String newname;
+    String number;
     boolean ispassed=false;
     private static Scanner sc=new Scanner(System.in);
     public void addStudent()
@@ -85,12 +87,12 @@ public class StudentManagementSystem {
     }
     public void updateStudent()
     {
-        IO.print("Enter new Name:");
-        String newname= sc.nextLine();
-        if(newname!=this.StudentName)
+        IO.println("Enter new Name:");
+         this.newname= sc.nextLine();
+        if(this.newname !=this.StudentName)
         {
-            IO.println("Updated Student Name:"+newname);
-            IO.println("Roll NUmber:"+RollNumber);
+            IO.print("Updated Student Name:"+newname);
+            IO.println("Roll Number:"+RollNumber);
             IO.println("Course:"+Course);
         }else
         {
@@ -100,8 +102,8 @@ public class StudentManagementSystem {
     public void deleteStudent()
     {
         IO.print("Enter RollNumber:");
-        String number=sc.nextLine();
-        if(number==this.RollNumber)
+         this.number=sc.nextLine();
+         if(this.number.equals(this.RollNumber))
         {
             IO.println("Deleted Successfully!!!");
         }
