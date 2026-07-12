@@ -13,7 +13,7 @@ public class CountdigitsLettersandSpecialCharacters {
             if(ch>='a'&&ch<='z')
             {
                 Letters++;
-            }else if(dg>='1' && dg<='5')
+            }else if(dg>='1' && dg<='9')
             {
                 Digits++;
             }else
@@ -21,8 +21,8 @@ public class CountdigitsLettersandSpecialCharacters {
                 SpecialCharacters++;
             }
         }
-        IO.println(Letters);
-        IO.println(Digits);
-        IO.println(SpecialCharacters);
+        IO.println("Letters:"+Letters);
+        IO.println("Digits:"+Digits);
+        IO.println("Characters:"+SpecialCharacters);
     }
 }
